@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="hello">
+			<result>
+				/hello.jsp
+			</result>
+		</action>
+	</package>
+	<package name="com.lrb.action" extends="struts-default">
+		<action name="login" class="LoginAction">
+			<result name="input">/WEB-INF/index.jsp</result>
+			<result name="success">/WEB-INF/index.jsp</result>
+		</action>
+	</package></struts>    
